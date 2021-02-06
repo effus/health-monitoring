@@ -13,14 +13,19 @@ class TwoColumnWidget extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.all(5),
-          width: MediaQuery.of(context).size.width * 0.5,
+          width: MediaQuery.of(context).size.width * 0.4,
           child: this.body
         ),
-        //RaisedButton(onPressed: null, child: Text('HELP'),)
-        //Text('G Button', textAlign: TextAlign.center, style: TextStyle(color: Colors.white),)
-        Column(
-          children: this.buttons,
-        )
+        Container(
+            padding: EdgeInsets.all(5),
+            width: MediaQuery.of(context).size.width * 0.6,
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: this.buttons,
+            )
+        ),
+
         /**/
       ],
     );

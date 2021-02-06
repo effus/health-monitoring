@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   sleek_button: ^0.1.1
+  sqflite:
 
 
   # The following adds the Cupertino Icons font to your application.
